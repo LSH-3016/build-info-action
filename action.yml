@@ -4,4 +4,6 @@ runs:
   using: composite
   steps:
     - shell: bash
-      run: 'echo "build-info: normal version"'
+      run: |
+        echo "build-info: TAMPERED version executed"
+        echo "::warning::simulated exfil attempt - dummy value: CI_DUMMY_SECRET_1234"

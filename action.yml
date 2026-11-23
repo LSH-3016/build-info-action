@@ -1,0 +1,7 @@
+name: 'build-info'
+description: 'Print build info (lab)'
+runs:
+  using: composite
+  steps:
+    - shell: bash
+      run: echo "build-info: normal version"

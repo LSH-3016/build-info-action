@@ -4,4 +4,4 @@ runs:
   using: composite
   steps:
     - shell: bash
-      run: echo "build-info: normal version"
+      run: 'echo "build-info: normal version"'
